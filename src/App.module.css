@@ -1,0 +1,49 @@
+.header {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  align-items: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.15;
+  white-space: break-spaces;
+}
+
+.author {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  display: block;
+  margin-top: 0.25rem;
+  color: #000;
+}
+
+.nav {
+  z-index: 1;
+  font-size: 1rem;
+  justify-self: center;
+}
+
+.link {
+  color: #666;
+  text-decoration: none;
+}
+
+.link.active {
+  color: #000;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #cacaca;
+}

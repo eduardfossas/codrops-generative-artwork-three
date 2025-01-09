@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
