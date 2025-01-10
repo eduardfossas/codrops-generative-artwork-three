@@ -5,7 +5,7 @@ A collection of generative art pieces inspired by various artists and art moveme
 ## Art Pieces
 
 - **Lygia**: Inspired by Lygia Clark's geometric abstractions
-- **Richter**: Based on Gerhard Richter's color studies
+- **Richter**: Based on Gerhard Richter's stripes artworks
 - **Richter Farben**: A variation on Richter's color grid paintings
 - **De Stijl**: Homage to the De Stijl movement's geometric style
 - **Shapes**: Minimalist circular compositions
