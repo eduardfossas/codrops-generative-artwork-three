@@ -60,8 +60,6 @@
   color: #cacaca;
 }
 
-#cdawrap { display: none; }
-
 /* Media query for larger screens */
 @media (min-width: 50em) { 
   .header {
@@ -71,12 +69,5 @@
   }
   .nav {
     justify-self: center;
-  }
-  #cdawrap { 
-    display: block; 
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    max-width: 260px;
   }
 }
