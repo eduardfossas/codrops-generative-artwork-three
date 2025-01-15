@@ -12,18 +12,35 @@ function App() {
   return (
     <>
       <header className={styles.header}>
-        <h1 className={styles.title}>
-          Generative Artwork with Three.js
-          {`\n`}
-          <a
-            href="http://eduardfossas.vercel.app/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className={styles.author}
-          >
-            By Eduard Fossas
-          </a>
-        </h1>
+        <div className={styles.titlewrap}>
+          <h1 className={styles.title}>Generative Artwork with Three.js</h1>
+          <nav className={styles.meta}>
+            <a
+              href="http://eduardfossas.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={styles.metalink}
+            >
+              By Eduard Fossas
+            </a>
+            <a
+              href="https://tympanus.net/codrops/?p=84650"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={styles.metalink}
+            >
+              Read the tutorial
+            </a>
+            <a
+              href="https://github.com/eduardfossas/codrops-generative-artwork-three"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={styles.metalink}
+            >
+              GitHub
+            </a>
+            </nav>
+        </div>
 
         <nav className={styles.nav}>
           <Link className={styles.link} href="/">
