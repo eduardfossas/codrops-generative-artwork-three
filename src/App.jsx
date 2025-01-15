@@ -8,6 +8,8 @@ import { OrthographicCamera } from "./components/Orthographic";
 import styles from "./App.module.css";
 import { Shapes } from "./pages/Shapes";
 
+const BASE_PATH = __BASE_PATH__;
+
 function App() {
   return (
     <>
@@ -47,27 +49,27 @@ function App() {
             >
               All Demos
             </a>
-            </nav>
+          </nav>
         </div>
 
         <nav className={styles.nav}>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href={`${BASE_PATH}/`}>
             Lygia
           </Link>
           <span className={styles.separator}>|</span>
-          <Link className={styles.link} href="/richter">
+          <Link className={styles.link} href={`${BASE_PATH}/richter`}>
             Richter
           </Link>
           <span className={styles.separator}>|</span>
-          <Link className={styles.link} href="/richter-farben">
+          <Link className={styles.link} href={`${BASE_PATH}/richter-farben`}>
             Richter Farben
           </Link>
           <span className={styles.separator}>|</span>
-          <Link className={styles.link} href="/de-stijl">
+          <Link className={styles.link} href={`${BASE_PATH}/de-stijl`}>
             De Stijl
           </Link>
           <span className={styles.separator}>|</span>
-          <Link className={styles.link} href="/shapes">
+          <Link className={styles.link} href={`${BASE_PATH}/shapes`}>
             Shapes
           </Link>
         </nav>
@@ -75,19 +77,19 @@ function App() {
       <Canvas camera={{ position: [0, 0, 86] }}>
         <OrthographicCamera />
 
-        <Route path="/">
+        <Route path={`${BASE_PATH}/`}>
           <Lygia key="lygia" />
         </Route>
 
-        <Route path="/richter">
+        <Route path={`${BASE_PATH}/richter`}>
           <Richter />
         </Route>
 
-        <Route path="/richter-farben">
+        <Route path={`${BASE_PATH}/richter-farben`}>
           <RichterFarben />
         </Route>
 
-        <Route path="/de-stijl">
+        <Route path={`${BASE_PATH}/de-stijl`}>
           <DeStijl />
           <ambientLight intensity={2.2} color="#ffffff" />
           <directionalLight
@@ -97,7 +99,7 @@ function App() {
           />
         </Route>
 
-        <Route path="/shapes">
+        <Route path={`${BASE_PATH}/shapes`}>
           <Shapes />
         </Route>
       </Canvas>

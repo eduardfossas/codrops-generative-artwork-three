@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { useLocation } from "wouter";
 
+const BASE_PATH = __BASE_PATH__;
+
 export const OrthographicCamera = () => {
   const [location] = useLocation();
   const set = useThree(({ set }) => set);
@@ -15,11 +17,9 @@ export const OrthographicCamera = () => {
   );
   const perspectiveRef = useRef(new THREE.PerspectiveCamera(75, 0, 0.1, 1000));
 
-  console.log(location);
-
   useEffect(() => {
     const oldCam = camera;
-    if (location === "/de-stijl") {
+    if (location === `${BASE_PATH}/de-stijl`) {
       cameraRef.current.left = size.width / -2;
       cameraRef.current.right = size.width / 2;
       cameraRef.current.top = size.height / 2;
