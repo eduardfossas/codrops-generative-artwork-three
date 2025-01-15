@@ -39,6 +39,14 @@ function App() {
             >
               GitHub
             </a>
+            <a
+              href="https://tympanus.net/codrops/demos/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={styles.metalink}
+            >
+              All Demos
+            </a>
             </nav>
         </div>
 
